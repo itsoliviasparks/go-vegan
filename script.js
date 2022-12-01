@@ -104,10 +104,11 @@ goVegan.getRandomAnimalFact = (userAnimalChoice = "cows") => {
         $(".fact-recipe").html(factHTMLString)
     }
 
-goVegan.getUserAnimalChoice =  () => {
-    $("input[type=radio]").click(() => {
+goVegan.getUserAnimalChoice = function(){
+    $("input[type=radio]").click(function(){
         let userAnimalChoice = $("input[type=radio]:checked").val();
-        goVegan.getRandomAnimalPhotoAndFact(userAnimalChoice)
+        goVegan.getRandomAnimalPhoto(userAnimalChoice)
+        goVegan.getRandomAnimalFact(userAnimalChoice)
     })
     }
 
