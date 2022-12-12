@@ -1,6 +1,8 @@
 # Go Vegan 🌱
 How can you tell if someone is vegan? Don’t worry, They’ll tell you.
 
+<a href="https://itsoliviasparks-go-vegan.netlify.app">Live Site</a>
+
 ## About
 A guilt inducing app that utilizes two APIs to fetch and display data in response to user interaction.
 
