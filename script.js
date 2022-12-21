@@ -87,7 +87,7 @@ goVegan.getRandomAnimalPhoto = (userAnimalChoice = "cows") => {
             query: `${userAnimalChoice}`
         }
     }).then((data) => {
-        goVegan.randomAnimalPhoto = data.links.download
+        goVegan.randomAnimalPhoto = data.urls.regular
 
     const imageHTMLString = `
     <img src=${goVegan.randomAnimalPhoto} alt="${userAnimalChoice}"/>
