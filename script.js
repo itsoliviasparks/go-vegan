@@ -60,7 +60,7 @@ goVegan.facts = {
 
 goVegan.getRandomRecipe = $(".get-meal").click(() => {
     $.ajax({
-        url:"http://www.themealdb.com/api/json/v1/1/search.php?s=vegan",
+        url:"https://www.themealdb.com/api/json/v1/1/search.php?s=vegan",
         method: "GET",
         dataType: "json"
     }).then((data) => {
