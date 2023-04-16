@@ -11,7 +11,7 @@ Outside of tech, one of my passions is animal rights. And, in celebration of my 
 jQuery, JavaScript, CSS, HTML, <a href="https://unsplash.com/developers">Unsplash API</a>, & <a href="https://www.themealdb.com/api.php">TheMealDB API</a>
 
 ## Use
-- On app mount the user is presented with a `setTimeout` counter, a dropdown menu with vegan resources, and a cow photo & cow fact
+- Upon opening the app, the user will see a setTimeout counter, a dropdown menu with vegan resources, and a cow photo with a cow fact
 - The user can click any of the `radio` buttons below the main photo to generate a new animal photo (via API call) & animal fact (via internal data structure)
 - Under each animal fact is a "Try A Vegan Meal" `button` which, `on click`, generates an additional API call generating a link to a youtube video of a vegan recipe
 
