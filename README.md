@@ -1,5 +1,5 @@
 # Go Vegan 🌱
-<a href="https://itsoliviasparks-go-vegan.netlify.app">Live Site</a>
+<a href="https://itsoliviasparks-go-vegan.netlify.app">🔗 Live Site</a>
 
 ## About
 How can you tell if someone is vegan? Don’t worry, They’ll tell you.
