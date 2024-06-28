@@ -76,11 +76,14 @@ goVegan.getRandomRecipe = $(".get-meal").click(() => {
             `
             $(".fact-recipe").html(recipeHTMLString)
         })
+        .catch(() => {
+            $(".fact-recipe").html(`<p class="click-here">Vegan recipes are not available at this time. Please try again later.</p>`);
+        });
     })
 
 goVegan.getRandomAnimalPhoto = (userAnimalChoice = "cows") => {
     $.ajax({
-        url:"https://api.unsplash.com/photos/random/?client_id=6lAkpDtWl0104Kk_yBAPVCxLafKelmGN_gmU8Q62NeU",
+        url:"https://api.unsplash.com/photos/random/?client_id=U6bpb1gr_nfmgfjZ8EfTzpu2c37E47-E9vA4BHPOYDo",
         method: "GET",
         dataType: "json",
         data: {
@@ -94,6 +97,9 @@ goVegan.getRandomAnimalPhoto = (userAnimalChoice = "cows") => {
     `
     $(".image").html(imageHTMLString)
     })
+    .catch(() => {
+        $(".image").html(`<img src="/glenn-carstens-peters-IMRuLuNnFw4-unsplash.jpg" alt="corn field"/>`);
+    });
 }
 
 goVegan.getRandomAnimalFact = (userAnimalChoice = "cows") => {
